@@ -20,12 +20,12 @@ const Footer = () => {
                 </div>
                 <div className="p-5">
                     <h5>FOLLOW US</h5>
-                    <p><i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-instagram"></i></p>
+                    <p><i className="fab fa-facebook-square"></i> <i className="fab fa-twitter-square"></i> <i className="fab fa-instagram"></i></p>
                     <button className="btn btn-primary">CONTACT US</button>
                 </div>
             </div>
             <div className=" d-flex justify-content-between bg-dark text-white pt-2">
-                <p>Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> in Rangpur, Bangladesh</p>
+                <p>Made with <i className="fas fa-heart"></i> & <i className="fas fa-coffee"></i> in Rangpur, Bangladesh</p>
                 <p>© CopyWirght from AL Amin</p>
             </div>
         </div>
