@@ -1,6 +1,6 @@
 # National Diagonestic Lab
 
-live Link: 
+live Link: https://national-lab-alamin.web.app/
 
 ## Available Service
 
