@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "MRI Arthrogram",
+    "description": "An arthrography uses imaging equipment to evaluate a joint like the shoulder, elbow, wrist, hip, knee or ankle. It is a two-part procedure consisting of a contrast injection into the joint, followed by an MRI or CT scan of the joint. ",
+    "img": "https://i.ibb.co/0fSH4L8/Arthrogram.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Bone density scan",
+    "description": "A bone density scan, also known as a DEXA scan, is a type of low-dose x-ray test that measures calcium and other minerals in your bones. The measurement helps show the strength and thickness (known as bone density or mass)",
+    "img": "https://i.ibb.co/DbvfgbW/bone-density-scan.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Cardiac Scoring-CAT Scan",
+    "description": "Cardiac scoring, which is sometimes referred to as a heart scan or a calcium score, is a non-invasive CT scan of the heart. The test is designed to calculate your risk of developing Coronary Artery Disease (aka CAD)",
+    "img": "https://i.ibb.co/tm0rGM2/Cardiac-Scoring-CAT-Scan.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Computed Tomography (CT) Scan",
+    "description": "A CT scan or computed tomography scan is a medical imaging technique used in radiology to get detailed images of the body noninvasively for diagnostic purposes. The personnel that perform CT scans are called  technologists.",
+    "img": "https://i.ibb.co/2MtZFq3/Computed-Tomography-CT-Scan.jpg"
+  },
+  {
+    "id": "5",
+    "name": "DEXA scan",
+    "description": "A DEXA scan is a type of medical imaging test. It uses very low levels of x-rays to measure how dense your bones are. DEXA stands for “dual-energy X-ray absorptiometry.” Medical experts inexpensive test for helping to diagnose osteoporosis.",
+    "img": "https://i.ibb.co/TtqmwdX/DEXA-scan.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Enterography",
+    "description": "Your doctor has recommended you for computed tomography (CT) enterography which is a means of taking images of the small bowel and the large bowel or colon. Enterography comes from the words entero which means intestine or bowe and graphywhich means image",
+    "img": "https://i.ibb.co/ZWQVFt2/Enterography.png"
+  }
+]

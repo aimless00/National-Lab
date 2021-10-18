@@ -1,0 +1,14 @@
+.service-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+@media only screen and (max-width: 688px) {
+    .service-section{
+        display: block;
+        width: 100%;
+    }
+}

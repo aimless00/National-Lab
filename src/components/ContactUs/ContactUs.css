@@ -1,0 +1,16 @@
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 150px;
+}
+
+@media only screen and (max-width: 688px) {
+    .contact-us{
+       display: block;
+        padding: 0px;
+        margin: 0%;
+        width: 100%;
+    }
+    
+
+}

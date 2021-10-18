@@ -1,0 +1,27 @@
+.banner-section{
+    background-image: url(../../../background.jpg);
+    color: rgb(59, 64, 68);
+    padding: 20px;
+}
+.banner-text{
+    padding-top: 10%;
+    padding-bottom: 20px;
+}
+.banner-section p{
+    width: 40%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 688px) {
+    
+        .banner-section{
+           display: block;
+            padding: 0px;
+            margin: 5px;
+            width: 100%;
+        }
+        
+    
+}
