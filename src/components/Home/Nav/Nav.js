@@ -4,6 +4,7 @@ import useAuth from '../../../hooks/useAuth';
 
 const Nav = () => {
     const { user, logOut } = useAuth();
+    console.log(user);
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -29,7 +30,7 @@ const Nav = () => {
                         </ul>
                         <span className="navbar-text">
                             {user.email ? <div>
-                                <span className="mx-2">{user.displayName}</span>
+                                <span className="mx-2">{user?.displayName}</span>
                                 <Link className="btn btn-primary" to="/" onClick={logOut}>Log Out</Link>
                             </div> :
                                 <Link className="btn btn-primary" to="/login">Log In</Link>
