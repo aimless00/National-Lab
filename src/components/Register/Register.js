@@ -32,7 +32,8 @@ const Register = () => {
         setPassword(e.target.value);
     }
     const setDisplayName = () => {
-        setUserName(name)
+        setUserName(name);
+
     }
     const handleSignUp = e => {
         e.preventDefault();
@@ -40,6 +41,7 @@ const Register = () => {
             .then(result => {
                 setDisplayName()
                 result.user && history.push(redirect_url);
+                window.location.reload();
 
             })
     }
