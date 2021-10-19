@@ -1,4 +1,3 @@
-import { getAuth, updateProfile } from '@firebase/auth';
 import React, { useState } from 'react';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
