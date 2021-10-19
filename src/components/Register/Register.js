@@ -11,7 +11,7 @@ const Register = () => {
 
 
 
-    const { handleGoogleSignIn, registerEmailPassword } = useAuth();
+    const { handleGoogleSignIn, registerEmailPassword, setUserName } = useAuth();
     const location = useLocation();
     const history = useHistory();
 
@@ -32,26 +32,22 @@ const Register = () => {
     const handlePasswordSet = e => {
         setPassword(e.target.value);
     }
-    const setUserName = () => {
-        const auth = getAuth();
-        updateProfile(auth.currentUser, { displayName: name })
-            .then(result => {
-
-            })
+    const setDisplayName = () => {
+        setUserName(name)
     }
     const handleSignUp = e => {
         e.preventDefault();
         registerEmailPassword(email, password)
             .then(result => {
-                setUserName()
+                setDisplayName()
                 result.user && history.push(redirect_url);
 
             })
     }
 
     return (
-        <div className="bg-info">
-            <form onSubmit={handleSignUp} className="w-50 mx-auto">
+        <div>
+            <form onSubmit={handleSignUp} className="w-50 mb-2 mx-auto">
                 <h1 className="text-primary">Please Sign Up</h1>
                 <div className="row mb-3 mt-5">
                     <label htmlFor="Name" className="col-sm-2 col-form-label">Name</label>
@@ -71,11 +67,11 @@ const Register = () => {
                         <input onBlur={handlePasswordSet} type="password" className="form-control" id="inputPassword3" required />
                     </div>
                 </div>
-                <button type="submit" className="btn btn-primary">Sign in</button>
+                <button type="submit" className="btn btn-primary">Sign Up</button>
             </form>
             <p>Already have account? <Link to="/login">Log in</Link></p>
-            <div className="mt-5">
-                <button onClick={handleGoogleLogin} className="btn btn-primary">Google Sign Up</button>
+            <div className="p-5">
+                <button onClick={handleGoogleLogin} className="btn btn-primary ">Google Sign Up</button>
             </div>
         </div>
     );

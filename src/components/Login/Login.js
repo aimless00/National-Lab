@@ -49,7 +49,7 @@ const Login = () => {
                         <input onBlur={usePassword} type="password" className="form-control" id="inputPassword3" required />
                     </div>
                 </div>
-                <button type="submit" className="btn btn-primary">Sign Up</button>
+                <button type="submit" className="btn btn-primary">Sign In</button>
             </form>
             <p>New to Account? <Link to="/register">Create Account</Link></p>
             <div className="mt-5 ">

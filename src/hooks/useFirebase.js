@@ -1,5 +1,5 @@
 import initilizeAuthentication from "../Firebase/firebase.init";
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { useEffect, useState } from "react";
 
 const googleProvider = new GoogleAuthProvider();
@@ -23,6 +23,14 @@ const useFirebase = () => {
             })
     }
 
+    const setUserName = (name) => {
+        const auth = getAuth();
+        updateProfile(auth.currentUser, { displayName: name })
+            .then(result => {
+
+            })
+    }
+
     const registerEmailPassword = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }
@@ -43,7 +51,8 @@ const useFirebase = () => {
         handleGoogleSignIn,
         logOut,
         registerEmailPassword,
-        signInEmailPassword
+        signInEmailPassword,
+        setUserName
 
 
     }

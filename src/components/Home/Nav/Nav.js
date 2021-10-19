@@ -29,8 +29,8 @@ const Nav = () => {
                             </li>}
                         </ul>
                         <span className="navbar-text">
-                            {user.email ? <div>
-                                <span className="mx-2">{user?.displayName}</span>
+                            {user?.providerId ? <div>
+                                <span className="mx-2">{user.displayName}</span>
                                 <Link className="btn btn-primary" to="/" onClick={logOut}>Log Out</Link>
                             </div> :
                                 <Link className="btn btn-primary" to="/login">Log In</Link>
