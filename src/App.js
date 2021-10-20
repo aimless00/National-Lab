@@ -38,9 +38,6 @@ function App() {
             <Route exact path="/login">
               <Login></Login>
             </Route>
-            <Route exact path="/home/:Id/login">
-              <Login></Login>
-            </Route>
             <Route exact path="/register">
               <Register></Register>
             </Route>
