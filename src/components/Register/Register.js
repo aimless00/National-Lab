@@ -5,18 +5,20 @@ import './Register.css';
 import { FcGoogle } from 'react-icons/fc';
 import { GoSignOut } from 'react-icons/go';
 
+
 const Register = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('')
 
-
-
     const { handleGoogleSignIn, registerEmailPassword, setUserName } = useAuth();
     const location = useLocation();
     const history = useHistory();
 
+    // console.log(location);
+
     const redirect_url = location.state?.from || '/home';
+
     const handleGoogleLogin = () => {
         handleGoogleSignIn()
             .then(result => {

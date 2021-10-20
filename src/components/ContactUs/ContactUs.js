@@ -1,7 +1,6 @@
 import React from 'react';
 import './ContactUs.css'
-import img from '../../lab.jpg'
-import Footer from '../Home/Footer/Footer';
+import img from '../../lab.jpg';
 import { MdOutgoingMail } from 'react-icons/md';
 import { BsFillTelephoneOutboundFill } from 'react-icons/bs';
 import { BiCurrentLocation } from 'react-icons/bi';

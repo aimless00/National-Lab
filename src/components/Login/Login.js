@@ -13,6 +13,7 @@ const Login = () => {
     const { handleGoogleSignIn, signInEmailPassword } = useAuth();
     const location = useLocation();
     const history = useHistory();
+    console.log(location.state);
 
     const redirect_url = location.state?.from || '/home';
     const handleGoogleLogin = () => {

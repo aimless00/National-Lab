@@ -19,7 +19,6 @@ const ServiceDetails = () => {
         const foundService = details.find((detail) => detail.id === Id);
         setSingleService(foundService);
     }, [details]);
-    console.log(singleService);
 
 
     return (
