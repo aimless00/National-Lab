@@ -3,7 +3,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import AboutUs from './components/AboutUs/AboutUs';
 import ContactUs from './components/ContactUs/ContactUs';
+import Footer from './components/Home/Footer/Footer';
 import Home from './components/Home/Home/Home';
+import Nav from './components/Home/Nav/Nav';
 import ServiceDetails from './components/Home/ServiceDetails/ServiceDetails';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
@@ -16,6 +18,7 @@ function App() {
     <div className="App">
       <AuthProvider>
         <BrowserRouter>
+          <Nav></Nav>
           <Switch>
             <Route exact path="/">
               <Home></Home>
@@ -42,6 +45,7 @@ function App() {
               <NotFound></NotFound>
             </Route>
           </Switch>
+          <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
     </div>

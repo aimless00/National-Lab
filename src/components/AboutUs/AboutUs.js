@@ -1,13 +1,11 @@
 import React from 'react';
 import Footer from '../Home/Footer/Footer';
-import Nav from '../Home/Nav/Nav';
 import './AboutUs.css';
 
 const AboutUs = () => {
     return (
 
         <div className="about-section">
-            <Nav></Nav>
             <div className="about-text">
                 <h1>Inception</h1>
                 <p>A pioneer in the medical diagnostics arena, National Diagnostics has been at the fore front of world-class diagnostic services since 1990. With supremely high standards and precise testing, our fundamental mission is to propagate healthier living for all of our patients. National Diagnostics is headed by Dr. Harvinder Singh, who is an alumnus of the Dayanand Medical College, Ludhiana.</p>

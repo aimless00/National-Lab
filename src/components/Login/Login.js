@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import { FcGoogle } from 'react-icons/fc';
+import { FaSignInAlt } from 'react-icons/fa';
+
+
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -49,11 +53,11 @@ const Login = () => {
                         <input onBlur={usePassword} type="password" className="form-control" id="inputPassword3" required />
                     </div>
                 </div>
-                <button type="submit" className="btn btn-primary">Sign In</button>
+                <button type="submit" className="btn btn-primary"><FaSignInAlt /> Sign In</button>
             </form>
             <p>New to Account? <Link to="/register">Create Account</Link></p>
             <div className="mt-5 ">
-                <button onClick={handleGoogleLogin} className="btn btn-primary"><i class="fab fa-google text-success fs-3 mx-2"></i>Google Sign In</button>
+                <button onClick={handleGoogleLogin} className="btn btn-info"><FcGoogle className="fs-3" /> Google Sign In</button>
             </div>
         </div >
     );

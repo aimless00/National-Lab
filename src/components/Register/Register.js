@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-import './Register.css'
+import './Register.css';
+import { FcGoogle } from 'react-icons/fc';
+import { GoSignOut } from 'react-icons/go';
 
 const Register = () => {
     const [name, setName] = useState('');
@@ -68,11 +70,11 @@ const Register = () => {
                         <input onBlur={handlePasswordSet} type="password" className="form-control" id="inputPassword3" required />
                     </div>
                 </div>
-                <button type="submit" className="btn btn-primary">Sign Up</button>
+                <button type="submit" className="btn btn-primary"><GoSignOut className="mx-2" />Sign Up</button>
             </form>
             <p>Already have account? <Link to="/login">Log in</Link></p>
             <div className="p-5">
-                <button onClick={handleGoogleLogin} className="btn btn-primary "><i class="fab fa-google text-success fs-3 mx-2"></i>Google Sign Up</button>
+                <button onClick={handleGoogleLogin} className="btn btn-info "><FcGoogle className="fs-3" />Google Sign Up</button>
             </div>
         </div>
     );

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import { FaSignInAlt, FaSignOutAlt } from 'react-icons/fa';
+
 
 const Nav = () => {
     const { user, logOut } = useAuth();
@@ -31,9 +33,9 @@ const Nav = () => {
                         <span className="navbar-text">
                             {user?.email ? <div>
                                 <span className="mx-2">{user.displayName}</span>
-                                <Link className="btn btn-primary" to="/" onClick={logOut}>Log Out</Link>
+                                <Link className="btn btn-primary" to="/" onClick={logOut}><FaSignOutAlt className="mx-2" />Log Out</Link>
                             </div> :
-                                <Link className="btn btn-primary" to="/login">Log In</Link>
+                                <Link className="btn btn-primary" to="/login"><FaSignInAlt className="mx-2" />Log In</Link>
                             }
                         </span>
                     </div>
