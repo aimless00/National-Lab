@@ -10,7 +10,7 @@ const Service = ({ service }) => {
             </div>
             <div>
                 <h2>{name.slice(0, 20)}</h2>
-                <p >{description.slice(0, 180)}</p>
+                <p >{description.slice(0, 170)}</p>
                 <Link to={`/home/${id}`}><button className="btn btn-primary">See Details</button></Link>
             </div>
         </div >

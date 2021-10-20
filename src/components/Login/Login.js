@@ -34,7 +34,7 @@ const Login = () => {
     }
 
     return (
-        <div>
+        <div className="border w-75 mx-auto mt-2 shadow p-3 mb-5 bg-body rounded">
             <form onSubmit={handleSignIn} className="w-50 mx-auto">
                 <h1 className="text-primary">Please Log In</h1>
                 <div className="row mb-3">
@@ -53,7 +53,7 @@ const Login = () => {
             </form>
             <p>New to Account? <Link to="/register">Create Account</Link></p>
             <div className="mt-5 ">
-                <button onClick={handleGoogleLogin} className="btn btn-primary">Google Sign In</button>
+                <button onClick={handleGoogleLogin} className="btn btn-primary"><i class="fab fa-google text-success fs-3 mx-2"></i>Google Sign In</button>
             </div>
         </div >
     );
